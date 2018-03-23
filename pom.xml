@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.dcrissman</groupId>
 	<artifactId>cacher</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -48,7 +48,7 @@
 
 	<properties>
 		<!-- Dependencies -->
-		<slf4j.version>1.7.7</slf4j.version>
+		<slf4j.version>1.7.25</slf4j.version>
 
 		<!-- Optional Dependencies (aka. 'provided' if desired) -->
 		<aopalliance.version>1.0</aopalliance.version>
@@ -88,7 +88,7 @@
 				<version>${slf4j.version}</version>
 			</dependency>
 
-			<!-- The AOP features are optional, and so should be provided by the implementing 
+			<!-- The AOP features are optional, and so should be provided by the implementing
 				application if desired. -->
 			<dependency>
 				<groupId>aopalliance</groupId>
@@ -106,7 +106,7 @@
 				<optional>true</optional>
 			</dependency>
 
-			<!-- Ideally Cacher should not be bound to a particular implementation 
+			<!-- Ideally Cacher should not be bound to a particular implementation
 				of javax.inject, however for the purposes of testing Guice will be used. -->
 			<dependency>
 				<groupId>com.google.inject</groupId>
